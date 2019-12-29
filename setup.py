@@ -10,7 +10,7 @@ def _description() -> str:
 
 setup(
     name="christmas-tree",
-    version="0.2.0",
+    version="0.2.1",
     author="Volodymyr Yahello",
     author_email="vyahello@gmail.com",
     description="A simple cli christmas tree, made just for christmas mood :)",
