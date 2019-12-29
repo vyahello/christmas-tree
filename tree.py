@@ -8,4 +8,4 @@ def _launch_tree(tree: Tree) -> None:
 
 
 if __name__ == "__main__":
-    _launch_tree(ChristmasTree(name="Slider", type_="real"))
+    _launch_tree(ChristmasTree(name="Slider", type_to="real"))

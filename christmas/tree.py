@@ -5,10 +5,10 @@ from typing import NamedTuple, Union
 from christmas.support import reset_terminal
 
 
-_random_static: int = randint(1, 30)
+_RANDOM: int = randint(1, 30)
 
 
-def tree_length(from_: int, to_: int = _random_static) -> int:
+def tree_length(from_: int, to_: int = _RANDOM) -> int:
     return randint(from_, to_)
 
 
@@ -29,6 +29,10 @@ class Tree(ABC):
     def launch(self, speed: float = 0.2) -> None:
         pass
 
+    @abstractmethod
+    def __len__(self) -> int:
+        pass
+
 
 class Garland(NamedTuple):
     dollar: str = "$"
@@ -38,9 +42,10 @@ class Garland(NamedTuple):
 
 
 class ChristmasTree(Tree):
-    def __init__(self, name: str, type_: str) -> None:
+    def __init__(self, name: str, type_to: str, length: int = _RANDOM) -> None:
         self._name: str = name
-        self._type: str = type_
+        self._type: str = type_to
+        self._length = length
         self._garland: Garland = Garland()
 
     def type(self) -> str:
@@ -54,9 +59,9 @@ class ChristmasTree(Tree):
         for iteration in range(1, 30, 2):
             if iteration == 1:
                 character = self._garland.dollar
-            elif tree_length(from_=1) % 4 == 0:
+            elif len(self) % 4 == 0:
                 character = self._garland.ring
-            elif tree_length(from_=1) % 3 == 0:
+            elif len(self) % 3 == 0:
                 character = self._garland.loop
             else:
                 character = self._garland.star
@@ -64,3 +69,6 @@ class ChristmasTree(Tree):
         format_tree("|||")
         format_tree("|||")
         sleep(speed)
+
+    def __len__(self) -> int:
+        return tree_length(1, self._length)

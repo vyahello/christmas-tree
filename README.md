@@ -26,8 +26,7 @@ Then please execute instructions below to launch game from your environment:
 ```python
 from christmas.tree import Tree, ChristmasTree
 
-
-tree: Tree = ChristmasTree(name="awesome", type_="real")
+tree: Tree = ChristmasTree(name="awesome", type_to="real")
 tree.launch(speed=.2)
 ```
 
