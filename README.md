@@ -2,8 +2,10 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Build Status](https://travis-ci.org/vyahello/christmas-tree.svg?branch=master)](https://travis-ci.org/vyahello/christmas-tree)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
-[![GitHub version](https://badge.fury.io/gh/vyahello%2Fsnakegame-cli.svg)](https://github.com/vyahello/christmas-tree/releases)
+[![GitHub version](https://badge.fury.io/gh/vyahello%2Fchristmas-tree.svg)](https://github.com/vyahello/christmas-tree/releases)
 
+[![PyPI version shields.io](https://img.shields.io/pypi/v/christmas-tree.svg)](https://pypi.python.org/pypi/christmas-tree/)
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/christmas-tree.svg)](https://pypi.python.org/pypi/christmas-tree/)
 # Christmas tree
 This tool will launch christmas tree right in your terminal, use it just for fun :)
 
@@ -52,6 +54,8 @@ To be able to run code analysis, please execute command below:
 
 ### Release notes
 
+* 0.2.0
+    * Add PYPI package
 * 0.1.0
     * Introduce initial app version
 

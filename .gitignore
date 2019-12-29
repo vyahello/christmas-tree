@@ -16,3 +16,8 @@ venv
 
 # pytest
 .coverage
+
+# pypi assets
+dist/
+build/
+*.egg-info

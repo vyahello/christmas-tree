@@ -26,7 +26,7 @@ class Tree(ABC):
         pass
 
     @abstractmethod
-    def launch(self, speed: float = .2) -> None:
+    def launch(self, speed: float = 0.2) -> None:
         pass
 
 
@@ -49,7 +49,7 @@ class ChristmasTree(Tree):
     def name(self) -> str:
         return self._name
 
-    def launch(self, speed: float = .2) -> None:
+    def launch(self, speed: float = 0.2) -> None:
         reset_terminal()
         for iteration in range(1, 30, 2):
             if iteration == 1:
