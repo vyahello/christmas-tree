@@ -1,6 +1,7 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Build Status](https://travis-ci.org/vyahello/christmas-tree.svg?branch=master)](https://travis-ci.org/vyahello/christmas-tree)
+[![Coverage Status](https://coveralls.io/repos/github/vyahello/christmas-tree/badge.svg?branch=master)](https://coveralls.io/github/vyahello/christmas-tree?branch=master)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
 [![GitHub version](https://badge.fury.io/gh/vyahello%2Fchristmas-tree.svg)](https://github.com/vyahello/christmas-tree/releases)
 
@@ -39,7 +40,7 @@ tree.launch(speed=.2)
 ### Launch source code
 To be able to run source code please execute command below:
 ```bash
-~ python tree.py
+➜ python tree.py
 ``` 
 
 ### CI 
@@ -49,7 +50,7 @@ after every made change to the repository.
 
 To be able to run code analysis, please execute command below:
 ```bash
-~ ./run-code-analysis.sh
+➜ ./run-code-analysis.sh
 ```
 
 ### Release notes
