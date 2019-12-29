@@ -54,6 +54,8 @@ To be able to run code analysis, please execute command below:
 
 ### Release notes
 
+* 0.2.1
+    * Apply code analysis
 * 0.2.0
     * Add PYPI package
 * 0.1.0
