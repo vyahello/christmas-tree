@@ -41,13 +41,15 @@ To be able to run source code please execute command below:
 
 ### CI 
 
-Project has Travis CI integration thus code analysis (`black`, `pylint`) and unittests (`pytest`) will be run automatically
+Project has Travis CI integration using [.travis.yml](.travis.yml) thus code analysis (`black`, `pylint`) and unittests (`pytest`) will be run automatically
 after every made change to the repository.
 
 To be able to run code analysis, please execute command below:
 ```bash
 ➜ ./run-code-analysis.sh
 ```
+
+Also project releases are published automatically and push into PYPI correcondingly using github workflows ([pythonpublish.yml](.github/workflows/pythonpublish.yml) file).
 
 ### Release notes
 
