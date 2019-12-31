@@ -39,7 +39,8 @@ tree.launch(speed=.2)
 ### Launch source code
 To be able to run source code please execute command below:
 ```bash
-➜ python tree.py
+➜ python -m christmas -h
+➜ python -m christmas tree awesome real .2
 ``` 
 
 ### CI 
@@ -54,6 +55,8 @@ To be able to run code analysis, please execute command below:
 
 ### Release notes
 
+* 0.3.0 
+    * Introduce christmas tree package 
 * 0.2.1
     * Apply code analysis
 * 0.2.0
